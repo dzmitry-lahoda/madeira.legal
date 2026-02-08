@@ -40,6 +40,36 @@
         background: radial-gradient(1200px 800px at 10% 10%, #ffffff 0%, var(--paper) 45%, #efe1cc 100%);
       }
 
+      .contact-bar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: rgba(247, 241, 232, 0.95);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid rgba(21, 20, 18, 0.1);
+        padding: 10px 8vw;
+        font-family: "Fira Sans Condensed", "Arial", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        font-size: 0.7rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 16px;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .contact-bar a {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(21, 20, 18, 0.25);
+        padding-bottom: 2px;
+      }
+
+      .contact-bar a:hover {
+        border-bottom-color: rgba(21, 20, 18, 0.6);
+      }
+
       header {
         padding: 72px 8vw 28px;
       }
@@ -193,6 +223,16 @@
     </style>
   </head>
   <body>
+    <div class="contact-bar" aria-label="Contact">
+      <div>Contact</div>
+      <div>
+        <a href="tel:+351914069170">Phone: +351 914 069 170</a>
+        ·
+        <a href="https://wa.me/351914069170" rel="noopener">WhatsApp</a>
+        ·
+        <a href="mailto:geral@legal.pt">Email: geral@legal.pt</a>
+      </div>
+    </div>
     <header>
       <h1>Ford Puma Gen-E Premium 54 kWh</h1>
       <p class="lead">100% electric, 2025, first owner, private use, driven only on Madeira. Automatic, Solar Silver, around 7,500 km.</p>
